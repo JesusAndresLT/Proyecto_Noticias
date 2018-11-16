@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Proy_Noticas_Peru</string>
+    <string name="Noticias_Peru">Noticias Peru</string>
+    <string name="email_header">noticiasPeru@gmail.com</string>
+    <string name="menu_Inicio">Inicio</string>
+    <string name="menu_NoticiaNacional">Noticia Nacional</string>
+    <string name="menu_NoticiaInternacional">Noticia Internacional</string>
+    <string name="menu_otros">Otros</string>
+    <string name="menu_Viral">Viral</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="home_fragment">HOME FRAGMENT</string>
+    <string name="noticiasnacional_fragment">NOTICIA NACIONAL FRAGMENT</string>
+    <string name="noticiainternaccional_fragment">LLEGADA FRAGMEN</string>
+
+
+    <string name="drawer_abierto">DRAWER ABIERTO</string>
+    <string name="drawer_cerrado">DRAWER CERRADO</string>
+</resources>

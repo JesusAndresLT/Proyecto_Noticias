@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_Inicio"/>
+
+        <item android:id="@+id/NoticiaNacional"
+            android:icon="@drawable/ic_nacional"
+            android:title="@string/menu_NoticiaNacional"/>
+
+        <item android:id="@+id/NoticiaInternacional"
+            android:icon="@drawable/ic_internacional"
+            android:title="@string/menu_NoticiaInternacional"/>
+
+    </group>
+    <item android:id="@+id/otros" android:title="@string/menu_otros">
+        <menu>
+            <item android:id="@+id/Viral"
+                android:title="@string/menu_Viral"
+                android:icon="@drawable/ic_viral"/>
+</menu>
+
+    </item>
+
+
+
+</menu>
