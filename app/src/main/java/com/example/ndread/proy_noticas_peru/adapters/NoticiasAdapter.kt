@@ -6,6 +6,7 @@ import com.example.ndread.proy_noticas_peru.models.Noticias
 import android.view.View
 import android.view.ViewGroup
 import com.example.ndread.proy_noticas_peru.R
+import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.card_news.view.*
 
 
@@ -20,8 +21,8 @@ class NoticiasAdapter(val news:List<Noticias>): RecyclerView.Adapter<NoticiasAda
 
     class ViewHolder(item: View):RecyclerView.ViewHolder(item){
         fun bind(noticias:Noticias){
-            itemView.nombreNew.text= noticias.nombre
-            itemView.imageNew.setImageResource(noticias.foto)
+            itemView.nombreNew.text= noticias.newsNombre
+            Picasso.get().load(noticias.newsUrl).into(itemView.imageNew)
         }
 
 

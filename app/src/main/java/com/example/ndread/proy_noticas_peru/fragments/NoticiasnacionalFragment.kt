@@ -23,7 +23,8 @@ class NoticiasnacionalFragment : Fragment() {
     private lateinit var  adaptador:NoticiasAdapter
 
     private val lm by lazy{ LinearLayoutManager(context) }
-    private val lista: ArrayList<Noticias> by lazy {getnoticias()}
+    private val lista: ArrayList<Noticias> = ArrayList()
+
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
@@ -33,6 +34,7 @@ class NoticiasnacionalFragment : Fragment() {
 
         recycler = root.recyclerSalidas as RecyclerView
         setupRecycler()
+        getnoticias()
         return root
 
     }
@@ -45,20 +47,16 @@ class NoticiasnacionalFragment : Fragment() {
         recycler.adapter=adaptador
     }
 
-    private fun getnoticias(): ArrayList<Noticias> {
-        return  object:ArrayList<Noticias>(){
-            init{
-                add(Noticias(1,"Mejor hinchada 2018",R.drawable.mhp2018))
-                add(Noticias(2,"Odebretch",R.drawable.ode))
-                add(Noticias(3,"Princion Preventiva",R.drawable.snk))
-                add(Noticias(4,"Posible cura del sida",R.drawable.sida))
-                add(Noticias(5,"Odebretch",R.drawable.ode))
+    private fun getnoticias(){
+
+              lista.add(Noticias("Odebrecht","https://firebasestorage.googleapis.com/v0/b/noticias-52dec.appspot.com/o/Noticias%2Fode.jpg?alt=media&token=aa4f74bd-9eb3-4e34-bc8a-a2e3b8438d17"))
+
 
             }
-        }
+
     }
 
 
 
 
-}
+
